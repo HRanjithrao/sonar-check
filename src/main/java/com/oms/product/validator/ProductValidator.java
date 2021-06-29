@@ -26,7 +26,7 @@ public class ProductValidator {
 	
 	public static boolean validateName(String name)
 	{
-		String regex = "([A-Za-z]+([ ][A-Za-z]+)*){1,100}";
+		String regex = "([A-Za-z]+([ ][A-Za-z]+){10}){1,100}";
 		
 		if(name.matches(regex))
 		{
@@ -37,7 +37,7 @@ public class ProductValidator {
 	
 	public static boolean validateDescription(String desc)
 	{
-		String regex = "([A-Za-z]+([ ][A-Za-z]+)*){1,500}";
+		String regex = "([A-Za-z]+([ ][A-Za-z]+){10}){1,100}";
 		
 		if(desc.matches(regex))
 		{
